@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\choih\\Desktop\\repo\\WPF\\wpf\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EE3A482-D467-484C-AD63-D6A08DD22256}|wpf\\wpf.csproj|c:\\users\\choih\\desktop\\repo\\wpf\\wpf\\wpf\\datascreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5EE3A482-D467-484C-AD63-D6A08DD22256}|wpf\\wpf.csproj|solutionrelative:wpf\\datascreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5EE3A482-D467-484C-AD63-D6A08DD22256}|wpf\\wpf.csproj|c:\\users\\choih\\desktop\\repo\\wpf\\wpf\\wpf\\loginscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5EE3A482-D467-484C-AD63-D6A08DD22256}|wpf\\wpf.csproj|solutionrelative:wpf\\loginscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,13 +19,13 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DataScreen.xaml",
-              "DocumentMoniker": "C:\\Users\\choih\\Desktop\\repo\\WPF\\wpf\\wpf\\DataScreen.xaml",
-              "RelativeDocumentMoniker": "wpf\\DataScreen.xaml",
-              "ToolTip": "C:\\Users\\choih\\Desktop\\repo\\WPF\\wpf\\wpf\\DataScreen.xaml",
-              "RelativeToolTip": "wpf\\DataScreen.xaml",
+              "Title": "LoginScreen.xaml",
+              "DocumentMoniker": "C:\\Users\\choih\\Desktop\\repo\\WPF\\wpf\\wpf\\LoginScreen.xaml",
+              "RelativeDocumentMoniker": "wpf\\LoginScreen.xaml",
+              "ToolTip": "C:\\Users\\choih\\Desktop\\repo\\WPF\\wpf\\wpf\\LoginScreen.xaml",
+              "RelativeToolTip": "wpf\\LoginScreen.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-13T11:45:11.507Z",
+              "WhenOpened": "2025-04-13T11:47:44.058Z",
               "EditorCaption": ""
             }
           ]
