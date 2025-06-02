@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.ComponentModel;
+using CommunityToolkit.Mvvm.ComponentModel;
+
+namespace cloneCoding.ViewModels
+{
+    [ObservableObject]
+    public partial class LoginControlViewModel
+    {
+
+    }
+}

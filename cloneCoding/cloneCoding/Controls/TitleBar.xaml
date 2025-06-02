@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="cloneCoding.Controls.TitleBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:cloneCoding.Controls"
+             xmlns:converters="clr-namespace:cloneCoding.Converters"
+             mc:Ignorable="d" 
+             d:DesignHeight="20"
+             d:DesignWidth="200"
+             Name="root"
+             >
+    <UserControl.Resources>
+        <converters:WindowStateMarginConverter x:Key="WindowStateMarginConverter" />
+        <BooleanToVisibilityConverter x:Key="BoolToVis" />
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Width" Value="25" />
+            <Setter Property="Height" Value="20" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="BorderBrush" Value="Transparent" />
+            <Setter Property="DockPanel.Dock" Value="Right" />
+            <Setter Property="WindowChrome.IsHitTestVisibleInChrome" Value="True" />
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <DockPanel Name="pnlTitle" Background="{StaticResource ColorPrimary}" LastChildFill="False">
+            <Button Name="btnExit" Margin="{Binding WinState, ElementName=root, Converter={StaticResource WindowStateMarginConverter}, ConverterParameter=Exit}">
+                <Image Source="/Images/xIcon.png" Width="10" />
+            </Button>
+            <Button Name="btnSmall" Margin="{Binding WinState, ElementName=root, Converter={StaticResource WindowStateMarginConverter}}">
+                <Image Source="/Images/mIcon.png" Width="10" />
+            </Button>
+            <Button Name="btnSetting"
+                    Margin="{Binding WinState, ElementName=root, Converter={StaticResource WindowStateMarginConverter}}">
+                <Image Source="/Images/sIcon.png" Width="15" />
+            </Button>
+        </DockPanel>
+        <Popup Name="SettingPopup"
+           PlacementTarget="{Binding ElementName=btnSetting}"
+           Placement="Bottom"
+           StaysOpen="False"
+           AllowsTransparency="True"
+           PopupAnimation="Fade"
+           Closed="SettingPopup_Closed">
+                <StackPanel Background="White" Width="50">
+                    <Button Name="btnSet" Content="설정" Height="25" />
+                    <Button Name="btnEx" Content="종료" Height="25" />
+                </StackPanel>
+           </Popup>
+    </Grid>
+</UserControl>
